@@ -9,6 +9,7 @@ put all your code into ./work and mount it to the container
 - `docker run -d -it --name my_cpp_devel_1 -v "./work:/root/work" cppdevel`
 
 ## step3: attach when to use:
+- (optional:if you stoped in step4) `docker start my_cpp_devel_1`
 - `docker attach my_cpp_devel_1`
 
 ## step4: dettach when finished using:
