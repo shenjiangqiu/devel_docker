@@ -19,3 +19,11 @@ put all your code into ./work or indicate your work path and mount it to the con
 loop step 3 and step 4
 
 ***if you are using VSCODE in a mac , you should read this artical:https://stackoverflow.com/questions/55484562/how-to-detach-from-docker-container-from-integrated-terminal-send-ctrl-p-ctr ***
+
+## example,
+if my code in host is at /home/sjq/git/new_gcn, I'll create a developement evironment like this;
+- create the image:`docker build --tag cppdevel .`
+- create the container:`docker run -d -it --name my_cpp_devel_1 -v "/home/sjq/git/new_gcn:/home/sjq/work" -v "/etc/passwd:/etc/passwd:ro" -v "/etc/shadow:/etc/shadow:ro" cppdevel`
+- attach and work:`docker attach my_cpp_devel_1`
+- after working,shutdown: Ctrl-D or detach: Ctrl-P+Ctrl-Q
+- working again: restart if shutdown:`docker start my_cpp_devel_1 && docker attach my_cpp_devel_1` or attach only:`docker attach my_cpp_devel_1`
