@@ -9,5 +9,5 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.
 COPY ./.autojump /root/.autojump
 COPY ./.zshrc /root/.zshrc
 RUN apt-get install -y python
-WORKDIR /root/work
+WORKDIR /root/
 ENTRYPOINT [ "zsh" ]
