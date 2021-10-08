@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  cpp_develop:
+    build: .
+    volumes:
+      - ./workdir:/work
+    restart: always
+    stdin_open: true
+    tty: true
