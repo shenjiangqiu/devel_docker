@@ -18,7 +18,7 @@ put all your code into ./work or indicate your work path and mount it to the con
 
 loop step 3 and step 4
 
-***if you are using VSCODE in a mac , you should read this artical:https://stackoverflow.com/questions/55484562/how-to-detach-from-docker-container-from-integrated-terminal-send-ctrl-p-ctr ***
+***if you are using VSCODE in a mac , you should read this artical:https://stackoverflow.com/questions/55484562/how-to-detach-from-docker-container-from-integrated-terminal-send-ctrl-p-ctr***
 
 ## example,
 if my code in host is at /home/sjq/git/new_gcn, I'll create a developement evironment like this;
